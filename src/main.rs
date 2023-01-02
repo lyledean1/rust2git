@@ -1,5 +1,6 @@
 mod git;
 
+// manually run export DYLD_LIBRARY_PATH=$(pwd)/libgit2-sys/target/source-v1.5.0/build
 fn main() {
     let path = std::env::args().skip(1).next().expect("usage: git-toy PATH");
     let repo = git::Repository::open(&path).expect("opening repo");
