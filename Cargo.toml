@@ -8,3 +8,8 @@ edition = "2021"
 [dependencies]
 libc = "0.2"
 libgit2-sys = { version = "0.1.0", path = "libgit2-sys", optional = true }
+
+[workspace]
+members = [
+    "libgit2-sys"
+]
